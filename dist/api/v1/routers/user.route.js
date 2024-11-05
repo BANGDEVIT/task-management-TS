@@ -32,7 +32,6 @@ route.post("/register", userController.register);
 route.post("/login", userController.login);
 route.post("/password/forgot", userController.forgotPassword);
 route.post("/password/otp", userController.otpPassword);
-route.post("/password/reset", userController.resetPassword);
 route.get("/detail", authMiddleware.requireAuth, userController.detail);
 route.get("/list", authMiddleware.requireAuth, userController.list);
 exports.userRoute = route;

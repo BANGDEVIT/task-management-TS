@@ -14,7 +14,7 @@ route.post("/password/forgot",userController.forgotPassword);
 
 route.post("/password/otp",userController.otpPassword);
 
-route.post("/password/reset",userController.resetPassword);
+// route.post("/password/reset",userController.resetPassword);
 
 route.get("/detail",authMiddleware.requireAuth,userController.detail);
 
